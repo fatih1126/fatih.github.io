@@ -1,34 +1,35 @@
-{
+
   "repository": "#",
   "license": "UNLICENSED",
-  "author": "Fatih Tayfur <byfatih112@gmail.com> ",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "webpack serve --config ./bundler/webpack.dev.js"
+    "dev": "webpack serve --config ./bundler/webpack.dev.js",
+    "prod": "git switch prod; git merge main; git push; git switch main"
   },
   "dependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "@tweenjs/tween.js": "^18.6.4",
-    "babel-loader": "^8.2.3",
-    "clean-webpack-plugin": "^4.0.0",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^9.0.1",
-    "css-loader": "^6.5.0",
+    "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
-    "html-loader": "^3.0.0",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.4.3",
+    "glsl-blend": "^1.0.3",
+    "glslify-loader": "^2.0.0",
+    "gsap": "^3.7.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.1.0",
+    "normalize-wheel": "^1.0.1",
     "portfinder-sync": "0.0.2",
     "raw-loader": "^4.0.2",
-    "style-loader": "^3.3.1",
-    "three": "^0.134.0",
-    "webpack": "^5.60.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.4.0",
+    "stats.js": "^0.17.0",
+    "style-loader": "^3.0.0",
+    "three": "^0.130.1",
+    "tweakpane": "^3.0.5",
+    "webpack": "^5.42.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
-  },
-  "devDependencies": {
-    "@types/three": "^0.143.0",
-    "@types/uuid": "^8.3.4"
   }
 }
